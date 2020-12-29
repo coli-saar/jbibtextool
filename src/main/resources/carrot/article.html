@@ -1,0 +1,5 @@
+<p class="bibentry">{{ author }}.
+    {% if url %}<a href="{{ url }}">{{ title }}</a>{% else if doi %}<a href="https://dx.doi.org/{{ doi }}">{{ title }}</a>{% else %}{{ title }}{% endif %}.
+    <i>{{ journal }}</i>{{ issueData }}.
+    {% if webnote %}<strong>{{ html.safe(webnote) }}</strong>{% endif %}
+</p>

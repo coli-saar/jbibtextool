@@ -1,0 +1,8 @@
+<p>{{ author }}.
+    {% if url %}<a href="{{ url }}">{{ title }}</a>{% else if doi %}<a href="https://dx.doi.org/{{ doi }}">{{ title }}</a>{% else %}{{ title }}{% endif %}.
+    In {% if editor %}{{ editor }} (eds.),{% endif %}
+    <i>{{ booktitle }}</i>.
+    {% if series %}{% if volume %} Volume {{ volume }} of {% endif %}{{ series }}.{% endif %}
+    {% if publisher %}{{ publisher }}{% if address %}, {{ address }}{% endif %}.{% endif %}}
+    {% if webnote %}<strong>{{ html.safe(webnote) }}</strong>{% endif %}
+</p>

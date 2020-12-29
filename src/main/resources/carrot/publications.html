@@ -1,0 +1,11 @@
+
+<html>
+<body>
+<h1>Publications</h1>
+
+{% for entry in entries %}
+    {{ html.safe(entry.getString()) }}
+{% endfor %}
+
+</body>
+</html>
