@@ -1,5 +1,6 @@
-<p class="bibentry">{{ author }}.
+<p class="bibentry">
+    {{ author }}.
     {% if url %}<a href="{{ url }}">{{ title }}</a>{% else if doi %}<a href="https://dx.doi.org/{{ doi }}">{{ title }}</a>{% else %}{{ title }}{% endif %}.
-    In <i>{{ booktitle }}</i>{% if address %}, {{ address }}.{% else %}.{% endif %}
+    In <i>{{ booktitle }}</i>{% if address %}, {{ address }}{% endif %}.
     {% if webnote %}<strong>{{ html.safe(webnote) }}</strong>{% endif %}
 </p>
